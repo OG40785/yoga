@@ -7,7 +7,7 @@ type Role = {
   };
   
   export default async function GetRole(){
-    const role = await db.query.role.findMany();
+    const role = await db.query.roles.findMany();
     const firstRole = role[0];
   
     return (
